@@ -27,6 +27,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseGame = true;
         Time.timeScale = 0f;
+        Cursor.visible = true;
         pauseButton.SetActive(false);
         pauseMenu.SetActive(true);
     }
