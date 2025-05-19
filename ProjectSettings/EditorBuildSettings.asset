@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GameJam/Michael/Scenes/UIPrueba.unity
+    path: Assets/GameJam/Michael/Scenes/Menu.unity
     guid: dea8ebb3577eb034783aa20f729d394d
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
