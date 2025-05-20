@@ -1,10 +1,13 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] TMP_Text ifWin, order, actual;
     PizzaPanel p;
+    
+
     private void Start()
     {
         p = GameObject.Find("FinalPizza").GetComponent<PizzaPanel>();
@@ -12,7 +15,16 @@ public class UIManager : MonoBehaviour
     }
     public void HasWin()
     {
-        ifWin.text = "Win? " + p.hasWin;
+        if (p.hasWin)
+        {
+            //ifWin.text = "Win? " + p.hasWin;
+            p.imageWin.SetActive(true);
+        }
+        else
+        {
+            p.imageLose.SetActive(true);
+        }
+           
     }
 
     public void UIOrder()

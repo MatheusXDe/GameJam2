@@ -12,6 +12,8 @@ public class PizzaPanel : MonoBehaviour
     public int currPizza = -1; Pizza currP;
 
     public bool hasWin;
+    [SerializeField] public GameObject imageWin;
+    [SerializeField] public GameObject imageLose;
     [SerializeField] UnityEvent onUIOrder, onUIPizza,onUIWin;
     public IEnumerator FirstInvoke()
     {
