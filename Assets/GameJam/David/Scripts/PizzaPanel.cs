@@ -1,14 +1,21 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PizzaPanel : MonoBehaviour
 {
-    [SerializeField] List<Pizza> pizzaPart = new();
-    List<PizzaType> pizzaTypes = new();
-    List<PizzaPosition> pizzaPositions = new();
+    public List<Pizza> pizzaPart = new();
 
+    public List<PizzaType> order = new();
     public int currPizza = -1; Pizza currP;
+
+    public bool hasWin;
+    [SerializeField] UnityEvent onUIOrder, onUIPizza;
+    private void Start()
+    {
+        onUIOrder?.Invoke();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.GetComponent<Pizza>().pos)
@@ -25,6 +32,7 @@ public class PizzaPanel : MonoBehaviour
             default:
                 break;
         }
+        onUIPizza?.Invoke();
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -62,5 +70,10 @@ public class PizzaPanel : MonoBehaviour
                 break;
         }
         if (currPizza > 2) currPizza = -1;
+    }
+
+    void WinCondition()
+    {
+        hasWin = pizzaPart[0].type == order[0] && pizzaPart[1].type == order[1] && pizzaPart[2].type == order[2];
     }
 }

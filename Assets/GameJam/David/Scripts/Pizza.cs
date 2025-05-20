@@ -16,6 +16,7 @@ public class Pizza : MonoBehaviour
     public PizzaPosition pos;
     SpriteRenderer sr;
     int random;
+    [SerializeField] int position;
     private void OnEnable()
     {
         sr = GetComponent<SpriteRenderer>();
