@@ -161,7 +161,7 @@ MonoBehaviour:
   onUIOrder:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1907185808}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: UIOrder
         m_Mode: 1
@@ -176,7 +176,7 @@ MonoBehaviour:
   onUIPizza:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1907185808}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ActualPizza
         m_Mode: 1
@@ -191,7 +191,7 @@ MonoBehaviour:
   onUIWin:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1907185808}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: HasWin
         m_Mode: 1
@@ -906,7 +906,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 36.533386, z: 1048.5093, w: 0}
+  m_margin: {x: 0, y: 36.533386, z: 599.3039, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1244,7 +1244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7366434231759950280, guid: 8a63728ecd801ca42b9773c058fbc832, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 539.99994
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 8379277209696321080, guid: 8a63728ecd801ca42b9773c058fbc832, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3641,7 +3641,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 1259.7776, w: 0}
+  m_margin: {x: 0, y: 0, z: 988.86334, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
