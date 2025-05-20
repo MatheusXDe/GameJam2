@@ -6,7 +6,8 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] TMP_Text ifWin, order, actual;
     PizzaPanel p;
-    
+    [SerializeField] private GameObject winMenu;
+    [SerializeField] private GameObject gameoverMenu;
 
     private void Start()
     {
@@ -18,11 +19,13 @@ public class UIManager : MonoBehaviour
         if (p.hasWin)
         {
             //ifWin.text = "Win? " + p.hasWin;
-            p.imageWin.SetActive(true);
+            //p.imageWin.SetActive(true);
+            winMenu.SetActive(true);
         }
         else
         {
-            p.imageLose.SetActive(true);
+            //p.imageLose.SetActive(true);
+            gameoverMenu.SetActive(true);
         }
            
     }
