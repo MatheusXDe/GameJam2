@@ -17,18 +17,29 @@ public class Pizza : MonoBehaviour
     SpriteRenderer sr;
     int random;
     [SerializeField] int position;
+    [SerializeField] float speed;
+    bool move=true;
+    PizzaPanel p;
     private void OnEnable()
     {
+        p = GameObject.Find("FinalPizza").GetComponent<PizzaPanel>();
         sr = GetComponent<SpriteRenderer>();
         random = Random.Range(0, pizzas.Length);
 
         sr.sprite = pizzas[random].pizzaSprite;
         type = pizzas[random].type;
     }
+    private void Update()
+    {
+        if (position == p.currPizza) move = false;
+        if (p.currPizza ==-1) move = true;
+    }
     private void LateUpdate()
     {
-        transform.position = Vector2.MoveTowards(transform.position, destination, 10f*Time.deltaTime);
-        if (transform.position.x ==destination.x) Restart();
+        if(move)transform.position = Vector2.MoveTowards(transform.position, destination, speed *Time.deltaTime);
+        else return;
+
+        if (transform.position.x == destination.x) Restart();
     }
     void Restart()
     {
