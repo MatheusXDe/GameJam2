@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         p = GameObject.Find("FinalPizza").GetComponent<PizzaPanel>();
+        StartCoroutine(p.FirstInvoke());
     }
     public void HasWin()
     {
