@@ -84,6 +84,8 @@ public class PizzaPanel : MonoBehaviour
     void WinCondition()
     {
         hasWin = pizzaPart[0].type == order[0] && pizzaPart[1].type == order[1] && pizzaPart[2].type == order[2];
+        if (hasWin) SoundManager.Call.PlaySFX(0);
+        else SoundManager.Call.PlaySFX(1);
         onUIWin?.Invoke();
     }
 }
