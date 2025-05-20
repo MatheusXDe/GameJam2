@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4033c18357830534b8eade426610abe0, type: 3}
+  m_Name: Veggies
+  m_EditorClassIdentifier: 
+  pizzaSprite: {fileID: 8708880980820311482, guid: e76c40212671b034580247d8b34ce2b1, type: 3}
+  type: 0
